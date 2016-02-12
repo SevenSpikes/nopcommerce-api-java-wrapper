@@ -1,5 +1,6 @@
 package com.nopcommerce;
 
+import com.nopcommerce.domain.CategoryList;
 import com.nopcommerce.domain.CustomerList;
 import feign.Param;
 import feign.RequestLine;
@@ -10,4 +11,7 @@ public interface NopCommerceClient
 
     @RequestLine("GET /api/customers?limit={limit}&since_id={since-id}&page={page}&fields={fields}")
     CustomerList getCustomers(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") String sinceId, @Param("fields") String fields);
+
+    @RequestLine("GET /api/categories?limit={limit}&since_id={since-id}&page={page}&fields={fields}")
+    CategoryList getCategories(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") String sinceId, @Param("fields") String fields);
 }

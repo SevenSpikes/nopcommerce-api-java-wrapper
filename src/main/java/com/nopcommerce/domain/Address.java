@@ -14,7 +14,7 @@ import java.util.Date;
 public class Address
 {
     @JsonProperty(value = JsonConstants.ID)
-    private String id;
+    private int id;
 
     @JsonProperty(value = JsonConstants.EMAIL)
     private String email;
