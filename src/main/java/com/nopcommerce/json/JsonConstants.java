@@ -27,4 +27,17 @@ public final class JsonConstants
     public static final String NAME = "name";
 
     public static final String CATEGORIES = "categories";
+
+    // Product
+    public static final String PRODUCTS = "products";
+
+    public static final String SHORT_DESCRIPTION = "short_description";
+    public static final String FULL_DESCRIPTION = "full_description";
+    public static final String SKU = "sku";
+    public static final String STOCK_QUANTITY = "stock_quantity";
+    public static final String PRICE = "price";
+    public static final String OLD_PRICE = "old_price";
+    public static final String PRODUCT_COST = "product_cost";
+    public static final String CUSTOMER_ENTERS_PRICE = "customer_enters_price";
+    public static final String PRODUCT_TYPE = "product_type";
 }
