@@ -40,4 +40,10 @@ public final class JsonConstants
     public static final String PRODUCT_COST = "product_cost";
     public static final String CUSTOMER_ENTERS_PRICE = "customer_enters_price";
     public static final String PRODUCT_TYPE = "product_type";
+
+    // Product category mapping
+    public static final String PRODUCT_CATEGORY_MAPPINGS = "product_category_mappings";
+
+    public static final String PRODUCT_ID = "product_id";
+    public static final String CATEGORY_ID = "category_id";
 }
