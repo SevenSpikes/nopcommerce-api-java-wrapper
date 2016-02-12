@@ -30,6 +30,7 @@ public final class JsonConstants
 
     // Product
     public static final String PRODUCTS = "products";
+    public static final String PRODUCT = "product";
 
     public static final String SHORT_DESCRIPTION = "short_description";
     public static final String FULL_DESCRIPTION = "full_description";
@@ -46,4 +47,19 @@ public final class JsonConstants
 
     public static final String PRODUCT_ID = "product_id";
     public static final String CATEGORY_ID = "category_id";
+
+    // Order
+    public static final String ORDERS = "orders";
+
+    public static final String ORDER_TOTAL = "order_total";
+    public static final String ORDER_ITEMS = "order_items";
+    public static final String BILLING_ADDRESS = "billing_address";
+    public static final String SHIPPING_ADDRESS = "shipping_address";
+    public static final String CUSTOMER = "customer";
+    public static final String ORDER_STATUS = "order_status";
+    public static final String PAYMENT_STATUS = "payment_status";
+    public static final String SHIPPING_STATUS = "shipping_status";
+    public static final String SHIPPING_METHOD = "shipping_method";
+
+    public static final String QUANTITY = "quantity";
 }
