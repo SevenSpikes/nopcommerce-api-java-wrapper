@@ -9,10 +9,9 @@ import com.nopcommerce.json.JsonConstants;
 import lombok.Data;
 
 import java.util.Date;
-import java.util.List;
 
 @Data
-public class Customer
+public class Address
 {
     @JsonProperty(value = JsonConstants.ID)
     private String id;
@@ -26,12 +25,32 @@ public class Customer
     @JsonProperty(value = JsonConstants.LAST_NAME)
     private String lastName;
 
+    @JsonProperty(value = JsonConstants.COMPANY)
+    private String company;
+
+    @JsonProperty(value = JsonConstants.COUNTRY)
+    private String country;
+
+    @JsonProperty(value = JsonConstants.CITY)
+    private String city;
+
+    @JsonProperty(value = JsonConstants.PROVINCE)
+    private String province;
+
+    @JsonProperty(value = JsonConstants.ZIP_CODE)
+    private String zip;
+
+    @JsonProperty(value = JsonConstants.PHONE)
+    private String phone;
+
+    @JsonProperty(value = JsonConstants.ADDRESS1)
+    private String address1;
+
+    @JsonProperty(value = JsonConstants.ADDRESS2)
+    private String address2;
+
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)
     @JsonSerialize(using = FlexDateSerializer.class)
-    private Date registeredDate;
-
-    @JsonProperty(value = JsonConstants.ADDRESSES)
-    private List<Address> addresses;
-
+    private Date createdDate;
 }
