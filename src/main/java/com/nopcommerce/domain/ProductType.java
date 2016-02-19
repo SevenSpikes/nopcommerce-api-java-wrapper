@@ -1,33 +1,21 @@
 package com.nopcommerce.domain;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum ProductType
 {
-    SimpleProduct(5),
+    SimpleProduct("SimpleProduct"),
 
-    GroupedProduct(10);
+    GroupedProduct("GroupedProduct");
 
-    private int value;
+    private String value;
 
-    ProductType(final int value) {
+    ProductType(final String value) {
         this.value = value;
     }
 
     @JsonValue
-    public int getValue() {
+    public String getValue() {
         return this.value;
-    }
-
-    @JsonCreator
-    public static ProductType fromValue(int typeCode) {
-        for (ProductType productType: ProductType.values()) {
-            if (productType.value==typeCode) {
-                return productType;
-            }
-        }
-        throw new IllegalArgumentException("Invalid Product Type type code: " + typeCode);
-
     }
 }
