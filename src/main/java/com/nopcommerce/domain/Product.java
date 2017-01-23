@@ -10,6 +10,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class Product
@@ -29,6 +30,12 @@ public class Product
     @JsonProperty(value = JsonConstants.SKU)
     private String sku;
 
+    @JsonProperty(value = JsonConstants.SE_NAME)
+    private String seName;
+
+    @JsonProperty(value = JsonConstants.IMAGES)
+    private List<Image> images;
+
     @JsonProperty(value = JsonConstants.STOCK_QUANTITY)
     private int stockQuantity;
 
@@ -46,7 +53,6 @@ public class Product
 
     @JsonProperty(value = JsonConstants.PRODUCT_TYPE)
     private ProductType productType;
-
 
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)

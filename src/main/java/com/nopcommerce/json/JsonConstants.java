@@ -19,7 +19,7 @@ public final class JsonConstants
     public static final String COUNTRY = "country";
     public static final String CITY = "city";
     public static final String PROVINCE = "province";
-    public static final String PHONE = "phone";
+    public static final String PHONE = "phone_number";
     public static final String ZIP_CODE = "zip_postal_code";
     public static final String ADDRESS1 = "address1";
     public static final String ADDRESS2 = "address2";
@@ -35,12 +35,16 @@ public final class JsonConstants
     public static final String SHORT_DESCRIPTION = "short_description";
     public static final String FULL_DESCRIPTION = "full_description";
     public static final String SKU = "sku";
+    public static final String SE_NAME = "se_name";
     public static final String STOCK_QUANTITY = "stock_quantity";
     public static final String PRICE = "price";
     public static final String OLD_PRICE = "old_price";
     public static final String PRODUCT_COST = "product_cost";
     public static final String CUSTOMER_ENTERS_PRICE = "customer_enters_price";
     public static final String PRODUCT_TYPE = "product_type";
+
+    // Image
+    public static final String IMAGES = "images";
 
     // Product category mapping
     public static final String PRODUCT_CATEGORY_MAPPINGS = "product_category_mappings";
@@ -63,4 +67,13 @@ public final class JsonConstants
     public static final String SHIPPING_METHOD = "shipping_method";
 
     public static final String QUANTITY = "quantity";
+
+    // Webhook
+    public static final String DESCRIPTION = "Description";
+    public static final String FILTERS = "Filters";
+    public static final String IS_PAUSED = "IsPaused";
+    public static final String HEADERS = "Headers";
+    public static final String PROPERTIES = "Properties";
+    public static final String SECRET = "Secret";
+    public static final String WEB_HOOK_UIR = "WebHookUri";
 }
