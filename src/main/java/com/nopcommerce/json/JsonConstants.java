@@ -69,6 +69,7 @@ public final class JsonConstants
     public static final String QUANTITY = "quantity";
 
     // Webhook
+    public static final String WEBHOOK_ID = "Id";
     public static final String DESCRIPTION = "Description";
     public static final String FILTERS = "Filters";
     public static final String IS_PAUSED = "IsPaused";

@@ -10,7 +10,7 @@ import java.util.Set;
 @Data
 public class WebHook
 {
-    @JsonProperty(value = JsonConstants.ID)
+    @JsonProperty(value = JsonConstants.WEBHOOK_ID)
     private String id;
 
     @JsonProperty(value = JsonConstants.DESCRIPTION)

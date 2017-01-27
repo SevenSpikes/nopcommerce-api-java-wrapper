@@ -4,6 +4,8 @@ import com.nopcommerce.domain.*;
 import feign.Param;
 import feign.RequestLine;
 
+import java.util.List;
+
 public interface NopCommerceClient
 {
     int MAXIMUM_API_CALL_LIMIT = 250;
@@ -25,4 +27,7 @@ public interface NopCommerceClient
 
     @RequestLine("POST /api/webhooks/registrations")
     WebHook createWebhook(WebHook webhook);
+
+    @RequestLine("GET /api/webhooks/registrations")
+    List<WebHook> getWebhooks();
 }
