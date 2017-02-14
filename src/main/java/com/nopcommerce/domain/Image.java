@@ -10,6 +10,6 @@ public class Image
     @JsonProperty(value = JsonConstants.ID)
     private int id;
 
-    @JsonProperty(value = JsonConstants.IMAGES)
+    @JsonProperty(value = JsonConstants.SRC)
     private String src;
 }

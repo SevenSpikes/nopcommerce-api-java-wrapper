@@ -45,6 +45,7 @@ public final class JsonConstants
 
     // Image
     public static final String IMAGES = "images";
+    public static final String SRC = "src";
 
     // Product category mapping
     public static final String PRODUCT_CATEGORY_MAPPINGS = "product_category_mappings";
