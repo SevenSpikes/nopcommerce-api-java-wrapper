@@ -19,6 +19,9 @@ public class Category
     @JsonProperty(value = JsonConstants.NAME)
     private String name;
 
+    @JsonProperty(value = JsonConstants.SE_NAME)
+    private String seName;
+
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)
     @JsonSerialize(using = FlexDateSerializer.class)
