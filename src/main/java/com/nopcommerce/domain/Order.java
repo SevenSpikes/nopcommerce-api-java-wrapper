@@ -24,6 +24,9 @@ public class Order
     @JsonProperty(value = JsonConstants.ORDER_DISCOUNT)
     private BigDecimal orderDiscount;
 
+    @JsonProperty(value = JsonConstants.REFUNDED_AMOUNT)
+    private BigDecimal refundedAmount;
+
     @JsonProperty(value = JsonConstants.BILLING_ADDRESS)
     private Address billingAddress;
 

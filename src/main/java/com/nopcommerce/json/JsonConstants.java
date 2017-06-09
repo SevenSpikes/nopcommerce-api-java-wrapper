@@ -58,6 +58,7 @@ public final class JsonConstants
 
     public static final String ORDER_TOTAL = "order_total";
     public static final String ORDER_DISCOUNT = "order_discount";
+    public static final String REFUNDED_AMOUNT = "refunded_amount";
     public static final String ORDER_ITEMS = "order_items";
     public static final String BILLING_ADDRESS = "billing_address";
     public static final String SHIPPING_ADDRESS = "shipping_address";
