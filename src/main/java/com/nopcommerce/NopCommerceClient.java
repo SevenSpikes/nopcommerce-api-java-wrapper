@@ -16,8 +16,8 @@ public interface NopCommerceClient
     @RequestLine("GET /api/categories?limit={limit}&since_id={since-id}&page={page}&fields={fields}")
     CategoryList getCategories(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") Integer sinceId, @Param("fields") String fields);
 
-    @RequestLine("GET /api/products?limit={limit}&since_id={since-id}&page={page}&fields={fields}")
-    ProductList getProducts(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") Integer sinceId, @Param("fields") String fields);
+    @RequestLine("GET /api/products?limit={limit}&since_id={since-id}&page={page}&fields={fields}&published_status={published-status}")
+    ProductList getProducts(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") Integer sinceId, @Param("published-status") PublishedStatus publishedStatus, @Param("fields") String fields);
 
     @RequestLine("GET /api/product_category_mappings?limit={limit}&since_id={since-id}&page={page}&fields={fields}")
     ProductCategoryMappingList getProductCategoryMappings(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") Integer sinceId, @Param("fields") String fields);
