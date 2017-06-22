@@ -54,6 +54,9 @@ public class Product
     @JsonProperty(value = JsonConstants.PRODUCT_TYPE)
     private ProductType productType;
 
+    @JsonProperty(value = JsonConstants.PUBLISHED)
+    private Boolean published;
+
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)
     @JsonSerialize(using = FlexDateSerializer.class)

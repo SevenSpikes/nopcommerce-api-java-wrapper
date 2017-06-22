@@ -38,6 +38,7 @@ public final class JsonConstants
     public static final String SE_NAME = "se_name";
     public static final String STOCK_QUANTITY = "stock_quantity";
     public static final String PRICE = "price";
+    public static final String PUBLISHED = "published";
     public static final String OLD_PRICE = "old_price";
     public static final String PRODUCT_COST = "product_cost";
     public static final String CUSTOMER_ENTERS_PRICE = "customer_enters_price";
