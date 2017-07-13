@@ -26,6 +26,12 @@ public class Customer
     @JsonProperty(value = JsonConstants.LAST_NAME)
     private String lastName;
 
+    @JsonProperty(value = JsonConstants.GENDER)
+    private String gender;
+
+    @JsonProperty(value = JsonConstants.DATE_OF_BIRTH)
+    private String dateOfBirth;
+
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)
     @JsonSerialize(using = FlexDateSerializer.class)

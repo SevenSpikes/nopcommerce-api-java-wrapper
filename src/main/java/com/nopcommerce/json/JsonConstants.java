@@ -10,6 +10,8 @@ public final class JsonConstants
     public static final String EMAIL = "email";
     public static final String FIRST_NAME = "first_name";
     public static final String LAST_NAME = "last_name";
+    public static final String GENDER = "gender";
+    public static final String DATE_OF_BIRTH = "date_of_birth";
     public static final String CREATED_ON_UTC = "created_on_utc";
 
     // Address
