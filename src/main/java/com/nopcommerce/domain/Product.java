@@ -36,6 +36,9 @@ public class Product
     @JsonProperty(value = JsonConstants.IMAGES)
     private List<Image> images;
 
+    @JsonProperty(value = JsonConstants.LOCALIZED_NAMES)
+    private List<LocalizedName> localizedNames;
+
     @JsonProperty(value = JsonConstants.STOCK_QUANTITY)
     private int stockQuantity;
 
