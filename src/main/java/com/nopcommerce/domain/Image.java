@@ -8,7 +8,7 @@ import lombok.Data;
 public class Image
 {
     @JsonProperty(value = JsonConstants.ID)
-    private int id;
+    private Integer id;
 
     @JsonProperty(value = JsonConstants.SRC)
     private String src;

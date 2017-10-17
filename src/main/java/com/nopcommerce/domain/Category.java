@@ -9,6 +9,7 @@ import com.nopcommerce.json.JsonConstants;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class Category
@@ -21,6 +22,12 @@ public class Category
 
     @JsonProperty(value = JsonConstants.SE_NAME)
     private String seName;
+
+    @JsonProperty(value = JsonConstants.LOCALIZED_NAMES)
+    private List<LocalizedName> localizedNames;
+
+    @JsonProperty(value = JsonConstants.IMAGE)
+    private Image image;
 
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)
