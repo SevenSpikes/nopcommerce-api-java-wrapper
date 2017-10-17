@@ -25,6 +25,9 @@ public interface NopCommerceClient
     @RequestLine("GET /api/orders?limit={limit}&since_id={since-id}&page={page}&fields={fields}")
     OrderList getOrders(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") Integer sinceId, @Param("fields") String fields);
 
+    @RequestLine("GET /api/languages?fields={fields}")
+    LanguageList getLanguages(@Param("fields") String fields);
+
     @RequestLine("POST /api/webhooks/registrations")
     WebHook createWebhook(WebHook webhook);
 

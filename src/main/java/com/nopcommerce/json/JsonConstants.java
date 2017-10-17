@@ -13,6 +13,7 @@ public final class JsonConstants
     public static final String GENDER = "gender";
     public static final String DATE_OF_BIRTH = "date_of_birth";
     public static final String CREATED_ON_UTC = "created_on_utc";
+    public static final String REGISTERED_IN_STORE_ID = "registered_in_store_id";
 
     // Address
     public static final String ADDRESSES = "addresses";
@@ -48,6 +49,7 @@ public final class JsonConstants
 
     // Image
     public static final String IMAGES = "images";
+    public static final String IMAGE = "image";
     public static final String SRC = "src";
 
     // Product category mapping
@@ -82,4 +84,17 @@ public final class JsonConstants
     public static final String PROPERTIES = "Properties";
     public static final String SECRET = "Secret";
     public static final String WEB_HOOK_UIR = "WebHookUri";
+
+    // Localized
+    public static final String LOCALIZED_NAMES = "localized_names";
+    public static final String LOCALIZED_NAME = "localized_name";
+    public static final String LANGUAGE_ID = "language_id";
+
+    // Store
+    public static final String LIMITED_TO_STORES = "limited_to_stores";
+    public static final String STORE_IDS = "store_ids";
+
+    // Language
+    public static final String LANGUAGES = "languages";
+    public static final String LANGUAGE_CULTURE = "language_culture";
 }
