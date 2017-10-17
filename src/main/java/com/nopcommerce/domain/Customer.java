@@ -32,6 +32,12 @@ public class Customer
     @JsonProperty(value = JsonConstants.DATE_OF_BIRTH)
     private String dateOfBirth;
 
+    @JsonProperty(value = JsonConstants.LANGUAGE_ID)
+    private Integer languageId;
+
+    @JsonProperty(value = JsonConstants.REGISTERED_IN_STORE_ID)
+    private Integer registeredInStoreId;
+
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)
     @JsonSerialize(using = FlexDateSerializer.class)
