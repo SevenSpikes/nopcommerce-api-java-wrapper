@@ -97,4 +97,5 @@ public final class JsonConstants
     // Language
     public static final String LANGUAGES = "languages";
     public static final String LANGUAGE_CULTURE = "language_culture";
+    public static final String DISPLAY_ORDER = "display_order";
 }

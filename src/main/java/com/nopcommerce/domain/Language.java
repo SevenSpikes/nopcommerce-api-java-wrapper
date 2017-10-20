@@ -21,6 +21,9 @@ public class Language
     @JsonProperty(value = JsonConstants.LIMITED_TO_STORES)
     private boolean limitedToStores;
 
+    @JsonProperty(value = JsonConstants.DISPLAY_ORDER)
+    private Integer displayOrder;
+
     @JsonProperty(value = JsonConstants.STORE_IDS)
     private ArrayList<Integer> storeIds;
 }
