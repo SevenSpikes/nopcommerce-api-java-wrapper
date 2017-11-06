@@ -1,13 +1,13 @@
 package com.nopcommerce.jackson;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @see <a href="http://www.baeldung.com/jackson-serialize-dates">Jackon Custom date serialization</a>
@@ -17,18 +17,8 @@ public final class FlexDateSerializer extends JsonSerializer<Date> {
 
     @Override
     public void serialize(final Date value, final JsonGenerator gen, final SerializerProvider arg2) throws IOException, JsonProcessingException {
-        gen.writeString(getFormatter().format(value));
-    }
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
 
-    //
-    //
-    private static SimpleDateFormat getFormatter() {
-        return FormatHolder.INSTANCE;
-    }
-
-    /**
-     */
-    private interface FormatHolder {
-        SimpleDateFormat INSTANCE = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
+        gen.writeString(simpleDateFormat.format(value));
     }
 }
