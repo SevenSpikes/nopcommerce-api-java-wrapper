@@ -58,6 +58,8 @@ public final class JsonConstants
     public static final String PRODUCT_ID = "product_id";
     public static final String CATEGORY_ID = "category_id";
 
+    public static final String PARENT_CATEGORY_ID = "parent_category_id";
+
     // Order
     public static final String ORDERS = "orders";
 
