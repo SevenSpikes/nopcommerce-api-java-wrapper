@@ -6,7 +6,7 @@
 
     <groupId>com.nopcommerce</groupId>
     <artifactId>api-wrapper</artifactId>
-    <version>0.2.6</version>
+    <version>0.2.7</version>
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
