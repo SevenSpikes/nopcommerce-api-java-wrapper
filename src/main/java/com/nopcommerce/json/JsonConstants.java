@@ -101,4 +101,9 @@ public final class JsonConstants
     public static final String LANGUAGES = "languages";
     public static final String LANGUAGE_CULTURE = "language_culture";
     public static final String DISPLAY_ORDER = "display_order";
+
+    // NewsLetterSubscriptions
+    public static final String NEWS_LETTER_SUBSCRIPTIONS = "news_letter_subscriptions";
+    public static final String STORE_ID = "store_id";
+    public static final String ACTIVE = "active";
 }

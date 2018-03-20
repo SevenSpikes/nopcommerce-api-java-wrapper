@@ -28,6 +28,9 @@ public interface NopCommerceClient
     @RequestLine("GET /api/languages?fields={fields}")
     LanguageList getLanguages(@Param("fields") String fields);
 
+    @RequestLine("GET /api/news_letter_subscriptions?limit={limit}&since_id={since-id}&page={page}&fields={fields}")
+    NewsLetterSubscriptionList getNewsLetterSubscriptions(@Param("limit") Integer limit, @Param("page") Integer page, @Param("since-id") Integer sinceId, @Param("fields") String fields);
+
     @RequestLine("POST /api/webhooks/registrations")
     WebHook createWebhook(WebHook webhook);
 
