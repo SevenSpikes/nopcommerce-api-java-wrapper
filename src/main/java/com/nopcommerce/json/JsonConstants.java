@@ -14,6 +14,7 @@ public final class JsonConstants
     public static final String DATE_OF_BIRTH = "date_of_birth";
     public static final String CREATED_ON_UTC = "created_on_utc";
     public static final String REGISTERED_IN_STORE_ID = "registered_in_store_id";
+    public static final String SUBSCRIBED_TO_NEWSLETTER = "subscribed_to_newsletter";
 
     // Address
     public static final String ADDRESSES = "addresses";

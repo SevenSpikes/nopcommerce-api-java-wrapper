@@ -38,6 +38,9 @@ public class Customer
     @JsonProperty(value = JsonConstants.REGISTERED_IN_STORE_ID)
     private Integer registeredInStoreId;
 
+    @JsonProperty(value = JsonConstants.SUBSCRIBED_TO_NEWSLETTER)
+    private Boolean subscribedToNewsLetter;
+
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)
     @JsonSerialize(using = FlexDateSerializer.class)
