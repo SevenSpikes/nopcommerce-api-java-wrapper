@@ -30,7 +30,7 @@ public class Customer
     private String gender;
 
     @JsonProperty(value = JsonConstants.DATE_OF_BIRTH)
-    private String dateOfBirth;
+    private Date dateOfBirth;
 
     @JsonProperty(value = JsonConstants.LANGUAGE_ID)
     private Integer languageId;
