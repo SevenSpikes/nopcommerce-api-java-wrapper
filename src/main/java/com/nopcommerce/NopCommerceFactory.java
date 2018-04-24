@@ -3,6 +3,7 @@ package com.nopcommerce;
 import com.nopcommerce.auth.ContentTypeRequestInterceptor;
 import com.nopcommerce.auth.OAuthRequestInterceptor;
 import feign.Feign;
+import feign.Request;
 import feign.RequestInterceptor;
 import feign.Retryer;
 import feign.jackson.JacksonDecoder;
@@ -20,7 +21,8 @@ public class NopCommerceFactory
         requestInterceptors.add(new OAuthRequestInterceptor(accessToken));
         requestInterceptors.add(new ContentTypeRequestInterceptor());
 
-//        Request.Options feignOptions = new Request.Options(10000, 30000);
+        // Set the read timeout to 3 minutes.
+        Request.Options feignOptions = new Request.Options(30000, 180000);
 
         Retryer retryer = new Retryer.Default(0,0,0);
 
@@ -30,7 +32,7 @@ public class NopCommerceFactory
 //                .logger(new Logger.JavaLogger().appendToFile("http.log"))
 //                .logLevel(Logger.Level.FULL)
                 .requestInterceptors(requestInterceptors)
-//                .options(feignOptions)
+                .options(feignOptions)
                 .retryer(retryer)
                 .target(NopCommerceClient.class, storeUrl);
 
