@@ -16,7 +16,7 @@ import java.util.List;
 public class Product
 {
     @JsonProperty(value = JsonConstants.ID)
-    private int id;
+    private long id;
 
     @JsonProperty(value = JsonConstants.NAME)
     private String name;
@@ -59,6 +59,12 @@ public class Product
 
     @JsonProperty(value = JsonConstants.PUBLISHED)
     private Boolean published;
+
+    @JsonProperty(value = JsonConstants.PARENT_GROUPED_PRODUCT_ID)
+    private long parentGroupedProductId;
+
+    @JsonProperty(value = JsonConstants.ASSOCIATED_PRODUCT_IDS)
+    private List<Long> associatedProductIds;
 
     @JsonProperty(value = JsonConstants.CREATED_ON_UTC)
     @JsonDeserialize(using = FlexDateDeserializer.class)

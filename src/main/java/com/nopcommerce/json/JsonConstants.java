@@ -48,6 +48,9 @@ public final class JsonConstants
     public static final String CUSTOMER_ENTERS_PRICE = "customer_enters_price";
     public static final String PRODUCT_TYPE = "product_type";
 
+    public static final String PARENT_GROUPED_PRODUCT_ID = "parent_grouped_product_id";
+    public static final String ASSOCIATED_PRODUCT_IDS = "associated_product_ids";
+
     // Image
     public static final String IMAGES = "images";
     public static final String IMAGE = "image";
