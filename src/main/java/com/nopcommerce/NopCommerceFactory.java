@@ -26,7 +26,7 @@ public class NopCommerceFactory
 
         Retryer retryer = new Retryer.Default(0,0,0);
 
-        NopCommerceClient nopCommerceClient = Feign.builder()
+        return Feign.builder()
                 .decoder(new JacksonDecoder())
                 .encoder(new JacksonEncoder())
 //                .logger(new Logger.JavaLogger().appendToFile("http.log"))
@@ -35,7 +35,5 @@ public class NopCommerceFactory
                 .options(feignOptions)
                 .retryer(retryer)
                 .target(NopCommerceClient.class, storeUrl);
-
-        return nopCommerceClient;
     }
 }
