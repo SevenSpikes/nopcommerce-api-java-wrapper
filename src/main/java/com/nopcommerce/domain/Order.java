@@ -16,7 +16,7 @@ import java.util.List;
 public class Order
 {
     @JsonProperty(value = JsonConstants.ID)
-    private int id;
+    private long id;
 
     @JsonProperty(value = JsonConstants.ORDER_TOTAL)
     private BigDecimal orderTotal;
